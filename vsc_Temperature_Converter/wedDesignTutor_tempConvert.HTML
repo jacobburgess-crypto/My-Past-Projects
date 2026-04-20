@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="yo.css"/>
+        <title>WedDesignTutor</title>
+    </head>
+    <body>
+        
+            <main>
+                <h1>Temperature Converter</h1>
+                
+                <section>
+                <!-- This is Starting Temperature -->
+                 
+                    
+                    <fieldset>
+                        <label for="fahren_0"><input type="radio" id="fahren_0" name="start_temperature" value="fahrenheit" > Fahrenheit </label>
+                        <br>
+                        <label for="celsius_0"><input type="radio" id="celsius_0" name="start_temperature" value="celsius"> Celsius </label>
+                        <br>
+                        <label for="kelvin_0"><input type="radio" id="kelvin_0" name="start_temperature" value="kelvin"> Kelvin </label>
+                    </fieldset>
+                    
+                    <label for="temp_input"> Temp
+                    <input type="number" id="temp_input" >
+                    </label> 
+                    
+                <!-- This is Convert To -->
+                    <fieldset>
+                        <label for="fahren_1"><input type="radio" id="fahren_1" name="convert_temperature" value="fahrenheit" > Fahrenheit </label>
+                        <br>
+                        <label for="celsius_1"><input type="radio" id="celsius_1" name="convert_temperature" value="celsius"> Celsius </label>
+                        <br>
+                        <label for="kelvin_1"><input type="radio" id="kelvin_1" name="convert_temperature" value="kelvin"> Kelvin </label>
+                    </fieldset>
+                    
+                    <input type="submit" value="submit" onclick="tempConvert()">
+
+                    <br>
+
+                    <p>Result: <span id="temp_output"></span></p>
+                    <p id="error-message"></p>
+                </section>
+                
+                <script src="tempScript.js">
+                   
+                </script>
+                
+            </main>
+    </body>
+</html>
