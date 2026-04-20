@@ -1,0 +1,23 @@
+.topLoggedIn {
+    text-align: center;
+    white-space: nowrap;
+}
+.sideLeftRaS {
+  width: 10%;
+  max-width: 150px;
+}
+
+table, td, th, tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+table {
+  width: 100%;
+}
+
+/* td, th{
+  float: left;
+  width: 20%;
+} */
