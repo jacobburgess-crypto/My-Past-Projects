@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text" href="pop.css">
+    <title>Number Guesser</title>
+</head>
+<body onload="loadRandomNumber()">
+    <h1>User Interface</h1>
+    
+    <br>
+    <h4></h4>
+    
+    <label for="num_Input">Numeric Input  </label>
+    <input type="number" id="num_Input" min="1" max="100">
+    
+    <!-- The submit button will take the valiu of num_Input  -->
+    <input type="submit" value="submit"  onclick="guessTheNumber()">
+    
+    <br>
+    <br>
+    
+    <!-- needs more work, reset button needs to  -->
+    <button type="reset" value="Reset" onclick="resetRandomNumber()">Reset</button>
+        <!-- A new secret number is generated  -->
+        <!-- Guess count returns to 0  -->
+        <!-- Guess history clears  -->
+        <!-- Feedback message resets (and input clears) --> 
+    
+    <br>
+    <br>
+
+    <p for="num_Output">Result: <span id="num_Output"></span></p>
+    <!-- <br><br>
+     <p>the Random # is <span id="randomNumberIs"></span></p> -->
+
+    <div >
+        <label for="num_Guesses">List of Guesses: </label>
+        <ol id="num_Guesses" class="history-list"></ol>
+    </div>
+     <!-- will tell the user if the input is invaled -->
+     <p id="error_message"></p>
+    
+    <script src="gameLogic.JS"></script>
+</body>
+</html>

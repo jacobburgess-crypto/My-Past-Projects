@@ -1,0 +1,4 @@
+.tooLow { color: blue;}
+.tooHi { color: red;}
+.correct { color: green; font-weight: bold; }
+.history-list { list-style-type: decimal; }
